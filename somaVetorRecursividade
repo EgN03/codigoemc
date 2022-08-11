@@ -1,0 +1,20 @@
+#include <stdio.h>
+//soma dos números no vetor
+
+float soma(int v[], int i, int n){
+    float s = 0;
+    if(i==n){
+        return 0;
+    }else{
+        s = soma(v,i+1,n);
+        s=s+v[i];
+        return s;
+    }
+}
+int main()
+{
+    int v[] = {10,20,30,40};
+    printf("soma= %f", soma(v,0,4));
+
+    return 0;
+}

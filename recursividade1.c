@@ -1,3 +1,15 @@
+/*
+public static int mdc( int m, int n )
+{
+    int r;
+    do{
+        r = m % n;
+        m = n;
+        n = r;
+    }while( r != 0 );
+    return m;
+   }
+*/
 #include <stdio.h>
 
 int mdc( int m, int n )
